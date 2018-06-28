@@ -29,7 +29,16 @@ write("kata7", kata7)
 var kata8 = bestThing.indexOf("only");
 write("kata8", kata8)
 
-var kata9 = gotCitiesCSV.includes("aa");
+var kata9array = gotCitiesCSV.split(',');
+var kata9 = [];
+for(var i=0; i<7; i++){
+    var temp = kata9array[i];
+    write("kata9",temp);
+    if (temp.includes("aa")||temp.includes("ee")||temp.includes("ii")||temp.includes("oo")||temp.includes("uu")){
+        kata9.push(temp);
+    }    
+}
+
 write("kata9",kata9)
 
 var kata10 = lotrCitiesArray.sort(length);
