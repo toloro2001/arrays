@@ -41,8 +41,6 @@ for(var i=0; i<7; i++){
 
 write("kata9",kata9)
 var kata10=lotrCitiesArray.sort(function(a, b){
-    // ASC  -> a.length - b.length
-    // DESC -> b.length - a.length
     return a.length - b.length;
   });
 write("kata10", kata10)
